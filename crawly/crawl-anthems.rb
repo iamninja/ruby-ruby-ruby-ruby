@@ -14,6 +14,13 @@ HEADER_HASH = {'User-Agent' => "Ruby/#{RUBY_VERSION}"}
 page = Nokogiri::HTML(open(LIST_URL, HEADER_HASH))
 countriesInRows = page.css('div.mw-content-ltr table.wikitable tr')
 
+<<<<<<< HEAD
+=======
+# countryNames = Array.new()
+# anthemName = Array.new()
+# anthemAuthor = Array.new()
+
+>>>>>>> 42e3ca0204b6c6026643f31f005e0a236fbf85d3
 # Debbuging
 # puts countriesInRows.class
 # puts countriesInRows[1].children()
