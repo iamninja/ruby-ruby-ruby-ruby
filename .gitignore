@@ -1,2 +1,4 @@
 twitter/keys-and-tokens.rb
 lastfm/key-and-secret.rb
+
+*.swp
