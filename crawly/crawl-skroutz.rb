@@ -12,11 +12,12 @@ File.open("skroutz-product-list.txt", "r").each do |line|
 end
 
 url_list.each do |url|
+	print "Fetching data..."
 	page = Nokogiri::HTML(open(url, HEADER_HASH))
 	product_name = page.css('title').text.slice(/.+?(?=\|)/).strip
 	lowest_price = page.css('a.price_link')[0].text
 
-	puts product_name
-	puts lowest_price
+	print "\r"
+	print "#{product_name}: #{lowest_price}\n"
 end
 
