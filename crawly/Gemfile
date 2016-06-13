@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
+# Scrapping
 gem 'nokogiri'
 gem 'mechanize'
+
+# Mongo
+gem 'mongo'
+gem 'bson_ext'
